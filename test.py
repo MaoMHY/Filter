@@ -7,12 +7,11 @@ import requests
 tokenurl="https://wenxin.baidu.com/younger/portal/api/oauth/token"
 tokendata={
     "grant_type":"client_credentials",
-    "client_id":"1IFWlhc0WyXTa3i7xw3OeGTAuWp0KeY1",
-    "client_secret":"sqPtDNcxK6AreUi4D6ZgHshDEvOKG7hK"
+    "client_id":"*****************************",
+    "client_secret":"*****************************"
 }
 token_res=requests.request("POST",tokenurl,data=tokendata)
 access_token=json.loads(token_res.text)["data"]
-# print(access_token)
 
 
 
