@@ -1,6 +1,22 @@
 # coding:utf-8
 from flask import Flask,request,json,render_template,session,jsonify
 import os
+<<<<<<< HEAD
+=======
+import json
+import requests
+from sqlalchemy import false, true
+
+tokenurl="https://wenxin.baidu.com/younger/portal/api/oauth/token"
+tokendata={
+    "grant_type":"client_credentials",
+    "client_id":"*****************************",
+    "client_secret":"*****************************"
+}
+token_res=requests.request("POST",tokenurl,data=tokendata)
+access_token=json.loads(token_res.text)["data"]
+url = "https://wenxin.baidu.com/younger/portal/api/rest/1.0/ernie/3.0/zeus"
+>>>>>>> 97a3d491569d7c66ac1ba6f225be78e5a6cbce82
 
 app = Flask(__name__)
 
