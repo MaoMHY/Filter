@@ -4,14 +4,11 @@
 
 我们的demo是一个有前后端响应的网页。前端部分是对github中的某个开源项目（https://github.com/Caronell/blingbling）进行二次开发，后端由flask框架搭建而成。
 
-PS：因为视频文件太大不方便上传github，所以使用前需要自行在static/video/目录下添加一个名为abcd.mp4的视频文件。 
 
 # 环境搭建：
 
 ```
-!pip install --upgrade paddlepaddle -i https://mirror.baidu.com/pypi/simple
-!pip install --upgrade paddlehub -i https://mirror.baidu.com/pypi/simple
-!hub install senta_bilstm==1.2.1
+!pip install wenxin_api
 !pip install flask
 ```
 
