@@ -4,8 +4,8 @@ import threading
 import wenxin_api
 from wenxin_api.tasks.text_generation import TextGeneration
 
-wenxin_api.ak = "1IFWlhc0WyXTa3i7xw3OeGTAuWp0KeY1"
-wenxin_api.sk = "sqPtDNcxK6AreUi4D6ZgHshDEvOKG7hK"
+wenxin_api.ak = "***************************"
+wenxin_api.sk = "***************************"
 
 with open("./static/danmu/xiaocao.txt", 'r', encoding='UTF-8') as f:
     danmulist = [i.strip() for i in f.readlines()]
